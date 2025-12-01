@@ -17,6 +17,9 @@ Output
 
 For each test case of your program inpuy, you must print all packets sent in an orderly fashion followed by a empty line.
 
+
+< ---------------------- >
+
 Input Sample
 
 1
@@ -58,3 +61,5 @@ Package 002
 Package 004
 Package 005
 Package 010 
+
+< ---------------------- >
