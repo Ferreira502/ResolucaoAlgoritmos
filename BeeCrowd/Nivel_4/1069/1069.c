@@ -1,22 +1,34 @@
 #include <stdio.h>
+#include <string.h>
 
-int main ()
+int main() 
 {
     int n = 0;
-    int array[1000];
-    int cont = 0;
-    int erro = 0;
-
     scanf("%d", &n);
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &array[i]);
 
-        if (array[i] == '<')
+    while (n--) 
+    {
+        char array[1001];
+        scanf("%s", array);
+
+        int cont = 0;
+        int diamonds = 0;
+
+        for (int i = 0; i < strlen(array); i++) 
         {
-            cont++;
+            if (array[i] == '<') 
+            {
+                cont++;
+            } 
+            else if (array[i] == '>' && cont > 0) 
+            {
+                diamonds++;
+                cont--;
+            }
         }
-        
+
+        printf("%d\n", diamonds);
     }
-    
+
+    return 0;
 }
