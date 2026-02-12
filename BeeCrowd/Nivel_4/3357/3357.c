@@ -1,3 +1,6 @@
+//RESOLUCAO DA QUESTAO 1357 DO BEECROWD
+//AUTOR: GABRIEL FERREIRA PEREIRA
+
 #include <stdio.h>
 #include <math.h>
 

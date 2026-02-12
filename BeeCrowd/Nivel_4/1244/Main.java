@@ -1,3 +1,6 @@
+//RESOLUCAO DA QUESTAO 1244 DO BEECROWD
+//AUTOR: GABRIEL FERREIRA PEREIRA
+
 import java.util.*;
 
 public class Main 

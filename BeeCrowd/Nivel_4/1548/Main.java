@@ -1,3 +1,6 @@
+//RESOLUCAO DA QUESTAO 1548 DO BEECROWD
+//AUTOR: GABRIEL FERREIRA PEREIRA
+
 import java.util.*;
 
 class Main {

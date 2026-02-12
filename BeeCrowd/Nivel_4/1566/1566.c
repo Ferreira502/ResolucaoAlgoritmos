@@ -1,3 +1,6 @@
+//RESOLUCAO DA QUESTAO 1566 DO BEECROWD
+//AUTOR: GABRIEL FERREIRA PEREIRA
+
 #include <stdio.h>
 
 void ordenar(int n, int array[])

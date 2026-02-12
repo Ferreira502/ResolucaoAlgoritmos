@@ -1,3 +1,6 @@
+//RESOLUCAO DA QUESTAO 1259 DO BEECROWD
+//AUTOR: GABRIEL FERREIRA PEREIRA
+
 #include <stdio.h>
 
 void ordenarCrec(int array[], int n)

@@ -1,3 +1,6 @@
+//RESOLUCAO DA QUESTAO 1763 DO BEECROWD
+//AUTOR: GABRIEL FERREIRA PEREIRA
+
 import java.util.Scanner;
 
 public class Main 
