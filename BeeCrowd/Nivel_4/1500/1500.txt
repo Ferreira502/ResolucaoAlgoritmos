@@ -1,0 +1,32 @@
+O mundo está cada vez mais mal e está ficando cada vez mais difícil de entrar na liga do mal. Desde que o lendário Bad Horse se aposentou, 
+você tem que responder corretamente as perguntas do mal do Dr. Horrible, que tem um PhD em malvadeza (mas não em Ciência da Computação). 
+É dado um conjunto de N elementos, que são inicialmente todos 0. Depois disso você receberá C comandos. São eles:
+
+    0 p q v - você tem que adicionar v para todos os números na faixa de p à q (inclusive), onde p e q são dois índices do array.
+    1 p q - imprima uma linha contendo um único inteiro, que é a soma de todos os elementos do array entre p e q (inclusive).
+
+Entrada
+
+A primeira linha contém T, que indica o número de casos de teste.
+
+Cada caso de teste começará com N (N ≤ 100 000) e C (C ≤ 100 000). Após isso você deverá ler C operações no formato descrito acima (1 ≤ p, q ≤ N and 1 ≤ v ≤ 107).
+
+Saída
+
+Imprima a respostas das consultas, conforme o exemplo de saída.
+
+Exemplo de Entrada
+
+1
+8 6
+0 2 4 26
+0 4 8 80
+0 4 5 20
+1 8 8
+0 5 7 14
+1 4 8 
+
+Exemplo de Saída 
+
+80
+508 
