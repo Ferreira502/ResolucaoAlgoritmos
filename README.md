@@ -5,9 +5,6 @@ Questões a serem feitas:
 
 Fazer Questoes do BeeCrowd:
 
-Depois da 2539, fazer questão mostrar todos os caminhos possiveis da arvore
-
--2539
 -1242
 -1710
 -1973
