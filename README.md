@@ -5,9 +5,9 @@ Questões a serem feitas:
 
 Fazer Questoes do BeeCrowd:
 
--1242
--1710
--1973
+-1242*
+-1710*
+-1973*
 -1477
 -1500
 -1201
