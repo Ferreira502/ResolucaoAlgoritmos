@@ -51,21 +51,21 @@ class Main
             }
             else if ( deuses[i].p == deuses[indiceMaior].p )
             {
-                // Regra 2: Maior número de deuses que matou (K)
+                // Regra 2: Maior numero de deuses que matou (K)
                 if ( deuses[i].k > deuses[indiceMaior].k ) 
                 {
                     indiceMaior = i;
                 }
                 else if ( deuses[i].k == deuses[indiceMaior].k )
                 {
-                    // Regra 3: Menor número de vezes que morreu (M)
+                    // Regra 3: Menor numero de vezes que morreu (M)
                     if ( deuses[i].m < deuses[indiceMaior].m )
                     {
                         indiceMaior = i;
                     }
                     else if ( deuses[i].m == deuses[indiceMaior].m )
                     {
-                        // Regra 4: Ordem alfabética (caso todos os atributos sejam iguais)
+                        // Regra 4: Ordem alfabetica (caso todos os atributos sejam iguais)
                         if ( deuses[i].nome.compareTo(deuses[indiceMaior].nome) < 0 )
                         {
                             indiceMaior = i;
