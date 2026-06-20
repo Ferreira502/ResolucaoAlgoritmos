@@ -5,10 +5,29 @@ Questões a serem feitas:
 
 Fazer Questoes do BeeCrowd:
 
--1281
--1256
--1110
--1088
--1340 
--3163 
--1024 
+Sorting Problems
+
+1252 - feito
+2174
+2580
+1251
+1260
+1259
+1215
+1023
+1236
+
+Mapping Problems
+
+2482
+1256
+1449
+
+Other Problems
+
+2929
+1069
+1211
+1069
+1167
+3171
