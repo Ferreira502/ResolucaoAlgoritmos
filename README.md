@@ -8,8 +8,8 @@ Fazer Questoes do BeeCrowd:
 Sorting Problems
 
 1252 - feito
-2174-  feito
-1251
+2174 - feito
+1251 - feito
 1260
 1259
 1215
