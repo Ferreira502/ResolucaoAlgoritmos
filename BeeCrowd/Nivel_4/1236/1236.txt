@@ -1,0 +1,23 @@
+O Professor Francisco solicitou sua ajuda para compactar alguns arquivos de texto que ele possui. Como os arquivos basicamente possuem muito espaço em branco e valores nulos (0), o compactador deve ser algo bem simples. O texto somente contém letras do alfabeto, espaços e números. Para simplificar, vamos considerar o $ como símbolo para compactação de espaços em branco e o # como símbolo para compactação de zeros. Só lembre de 2 detalhes:
+
+É o caractere da tabela AscII correspondente à frequência que deve ser gravado, e não o número decimal.
+caso apareça mais do que 255 caracteres seguidos de nulos ou brancos, a gravação deverá ser feita em mais do que um bloco. 
+Por exemplo, para compactar 380 zeros seguidos, o primeiro bloco compacta as 255 ocorrências e o segundo bloco as 125 restantes, 
+e assim por diante. O resultado seria "# #}". Note que o caractere 255 é invisível (aparece como se fosse um espaço em branco).
+
+Para você entender um pouco melhor a entrada e a saída, considere a tabela ASCII abaixo: Por exemplo CHR(3) equivale ao “ETX”
+
+Observações:
+
+Não compactar quando ocorrerem apenas dois zeros ou apenas dois espaços seguidos ("*00*" ou "*  *"),
+pois a compactação não teria efeito.
+o nosso toolkit pode não mostrar alguns caracteres especiais exigidos no output deste problema.
+
+Entrada
+
+A entrada contém vários casos de teste. A primeira linha contém um valor N que indica a quantidade de casos de teste. 
+Cada caso de teste contém uma linha com até 2000 caracteres para serem compactados.
+
+Saída
+
+Cada linha de entrada deve produzir uma linha de saída que é a compactação da linha de entrada, conforme exemplo abaixo.
