@@ -10,9 +10,9 @@ Sorting Problems
 1252 - feito
 2174 - feito
 1251 - feito
-1260
-1259
-1215
+1260 - feito
+1259 - feito
+1215 - feito
 1023
 1236
 

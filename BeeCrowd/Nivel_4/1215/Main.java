@@ -1,109 +1,73 @@
 import java.util.*;
 
-class Celula 
-{
-    public String elemento; 
-    public Celula prox;
-
-    public Celula( String elemento )
-    {
-        this.elemento = elemento;
-        this.prox = null;
-    }
-
-    public Celula() 
-    {
-        this(""); 
-    }
-}
-
-class Lista 
-{
-    private Celula primeiro;
-    private Celula ultimo;
-    
-    public Lista()
-    {
-        primeiro = new Celula();
-        ultimo = primeiro;
-    }
-
-    public void inserirFim( String x )
-    {
-        ultimo.prox = new Celula(x);
-        ultimo = ultimo.prox;
-    }
-
-    public String removerInicio() 
-    {
-        if (primeiro == ultimo) 
-        {
-            System.out.println("Erro");
-            return null;
-        }
-
-        Celula tmp = primeiro;
-        primeiro = primeiro.prox;
-        String resp = primeiro.elemento;
-        tmp.prox = null;
-        tmp = null;
-
-        return resp;
-    }
-
-    public void ordenar()
-    {
-        for ( Celula i = primeiro.prox; i != null; i = i.prox )
-        {
-            Celula menor = i;
-            for ( Celula j = i.prox; j != null; j = j.prox )
-            {
-                if ( j.elemento.compareTo(menor.elemento) < 0 )
-                {
-                    menor = j;
-                }
-            }
-        
-            if ( menor != i )
-            {
-                String tmp = i.elemento;
-                i.elemento = menor.elemento;
-                menor.elemento = tmp;
-            }
-        }
-    }
-
-    public void mostrar() 
-    {
-        for ( Celula i = primeiro.prox; i != null; i = i.prox ) 
-        {
-            System.out.print(i.elemento + " ");
-        }
-        
-        System.out.println();
-    }
-} 
-
 class Main 
-{   
-    public static void main(String[] args) 
+{
+    public static void main ( String[] args )
     {
         Scanner sc = new Scanner(System.in);
-        Lista lista = new Lista();
+        String palavra;
+        String[] conjunto = new String[1000];
+        int x = 0;
+        int y = 0;
+        String organiza = "";
 
-        while (sc.hasNext())
+        while ( sc.hasNext() ) 
         {
-            String palavra = sc.next();
-            lista.inserirFim(palavra);
+            palavra = sc.next();
+
+            for ( int i = 0; i < palavra.length(); i++ )
+            {
+                char c = palavra.charAt(i);
+
+                if ( c >= 'A' && c <= 'Z' ||  c >= 'a' && c <= 'z' ) 
+                {
+                    if ( c >= 'A' && c <= 'Z' )
+                    {
+                        c = (char)(c + 32);   
+                    }
+                    organiza += c;
+                }
+
+                else
+                {   
+                    if ( organiza.length() > 0 )
+                    {
+                        conjunto[x] = organiza;
+                        x++;
+                        organiza = "";
+                    }
+                }
+            }
+
+            if ( organiza.length() > 0 )
+            {
+                conjunto[x] = organiza;
+                x++;
+                organiza = "";
+            }
         }
 
-        System.out.println("\nLista original:");
-        lista.mostrar();
+        for ( int i = 0; i < x - 1; i++ )
+        {
+            for ( int j = i + 1; j < x; j++ )
+            {
 
-        lista.ordenar();
-
-        System.out.println("\nLista ordenada:");
-        lista.mostrar();
-
+                if ( conjunto[i].compareTo(conjunto[j]) > 0)
+                {
+                    String tmp = conjunto[i];
+                    conjunto[i] = conjunto[j];
+                    conjunto[j] = tmp;
+                }
+                
+            }
+        }
+    
+        for ( int l = 0; l < x; l++ )
+        {
+            if ( l == 0 || conjunto[l].compareTo(conjunto[l - 1]) != 0 )
+            {
+                System.out.println(conjunto[l]);
+            }
+        }
     }
 }
